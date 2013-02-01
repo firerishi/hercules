@@ -11,7 +11,10 @@ urlpatterns = patterns('',
     # url(r'^$', 'firerishi.views.home', name='home'),
     # url(r'^firerishi/', include('firerishi.foo.urls')),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(PROJECT_ROOT, "../static")}),
-		url(r'^$', 'landing.views.home'),
+		url(r'^$', 'landing.views.home'),        
+        url(r'^home$', 'landing.views.home'),
+		url(r'^about$', 'landing.views.home'),
+        url(r'^reads$', 'landing.views.reads'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
