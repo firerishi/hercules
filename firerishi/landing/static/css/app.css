@@ -440,6 +440,31 @@ section#right-section {
   font-size: 1em;
 } 
 
+
+/* BLOG */
+#blog-posts {
+  text-align: center;
+  list-style: none;
+  color: #999999;
+}
+#blog-posts li {
+  margin: 50px 0px; 
+}
+#hero-text a:hover,
+#blog-posts li a:hover {
+  text-decoration: underline;
+}
+#blog-posts h1,
+#blog-posts h2,
+#blog-posts h1 a {
+  color: #777;
+  font-weight: normal;
+}
+#blog-posts h4 {
+  color: #bcbcbc;
+  font-weight: normal;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 1200px) {

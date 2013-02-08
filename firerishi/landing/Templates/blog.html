@@ -1,0 +1,90 @@
+{% extends "base-leftside.html" %}
+
+{% block content %}
+
+       
+
+
+
+    <!-- Navbar
+    ================================================== -->
+    
+    <section id="right-section" class="grid_8">
+
+      <a id="main-responsive-nav" class=""></a>
+
+      <nav id="main-nav" class="">
+        <ul class="">
+          <li><a href="/about">ABOUT</a></li>
+          <li><a href="/blog">BLOG</a></li>
+          <!-- <li><a href="/work">WORK</a></li> -->
+          <li><a href="/reads">READS</a></li>        
+          <!-- <li><a href="/art">ART</a></li>        -->   
+        </ul>
+      </nav>
+
+      <a id="backtop" style="bottom: 2%;" href="#">
+        <img src="static/img/arrow-top-icon.png"/> 
+      </a>
+
+      <section id="hero-text" class="">
+        <header>
+          <h1>My Blog.</h1>          
+        </header>
+        <p>Jotting my thoughts...</p>  
+        <a href="{{ blogurl }}">
+          <h2>"{{ blogname }}"</h2>
+        </a>        
+      </section>   
+
+      
+
+      <ul id="blog-posts">
+        {% for post in posts %}
+        {% autoescape off %}
+        <li>          
+          {% if post.type == "link" %}
+          <a href="{{ post.url }}">
+            <h1>{{ post.title }}</h1>
+          </a>
+          {% endif %}
+          {% if post.type == "text" %}
+          <h1>{{ post.title }}</h1>
+          {{ post.body }}          
+          {% endif %}
+          {% if post.type == "photo" %}
+          <h1>{{ post.caption }}</h1>
+          <img src="{{ post.photolink }}"/>
+          {% endif %}
+          <!-- <h2>{{ post.type }}</h2> -->
+          <h4>{{ post.date }}</h4>
+        </li>
+        {% endautoescape %}
+        <br>
+        {% endfor %}
+      </ul>
+
+    </section>
+    <!-- End of Navbar
+    ================================================== -->
+
+    <script type="text/javascript">
+    
+
+    $('#main-responsive-nav').click(function() {
+      $('#main-nav').slideToggle();      
+    });
+
+    // Show (always) the main nav menu when the window width is >= 1000px
+    $(window).resize(function() {
+      var winWidth = $(window).width();
+      if (winWidth >= 1000) {
+        $('#main-nav').show();
+      }
+      else {
+       $('#main-nav').hide(); 
+     }
+   });
+    </script>
+
+    {% endblock %}
