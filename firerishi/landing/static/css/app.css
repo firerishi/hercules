@@ -141,6 +141,19 @@ section.leftsection p {
   color: #999;
 }
 
+#emailme {
+  margin-left: 10%;  
+  padding: 10px 20px;
+  color: #fefefe;
+  background: #777;
+  border-radius: 5px;
+  border: 5px solid #eee;
+  bottom: 2%;
+  position: fixed;
+}
+#emailme:hover {
+  background: #525266;
+}
 
 /* Right Section */
 section#right-section {
@@ -564,6 +577,19 @@ section#right-section {
     text-align: center;
     margin-left: 0%;
   }
+
+  #social-ratings {
+    display: none;
+  }
+
+  #emailme {    
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: auto;
+    border: none;
+    border-radius: 0;
+  }
 }
 
 /* Phone */
@@ -578,5 +604,7 @@ section#right-section {
   #blog-posts img {
     width: 100%;
   }
+
+
   
 }
