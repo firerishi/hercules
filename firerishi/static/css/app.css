@@ -570,9 +570,13 @@ section#right-section {
 @media screen and (max-width: 480px) {
   
 
-  #about-nav ul li {
-    width: 100%;
+  #about-nav ul li{
+    width: 90%;
     margin-bottom: 20px;
+  }
+
+  #blog-posts img {
+    width: 100%;
   }
   
 }

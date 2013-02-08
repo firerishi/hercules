@@ -41,7 +41,7 @@
     function scroll () {
       var xoffset = window.pageXOffset;
       var yoffset = window.pageYOffset;
-     console.log("scroll event detected! " + xoffset + " " + yoffset);     
+         
      if (yoffset > 0) {
       $("#backtop").show();
      }

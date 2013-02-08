@@ -1,4 +1,4 @@
-  $(function() {
+$(function() {
 
  var chart,chart1,chart2;
     //Everyday
@@ -19,14 +19,15 @@
         text: 'Everyday...'
       },       
       tooltip: {
-        formatter: function(){return false;}
+        //formatter: function(){return {point.percentage};}
+        //pointFormat: '{series.name}',
       },            
       plotOptions: {
         pie: {
           allowPointSelect: true,
           cursor: 'pointer',
           dataLabels: {
-            enabled: true,
+            enabled: false,
             color: '#999',                        
             formatter: function() {
               return '<b>'+ this.point.name +'</b>';
@@ -62,14 +63,14 @@
         text: 'I ideate with...'
       },
       tooltip: {
-        formatter: function () { return false; }
+        //formatter: function () { return false; }
       },
       plotOptions: {
         pie: {
           allowPointSelect: true,
           cursor: 'pointer',
           dataLabels: {
-            enabled: true,
+            enabled: false,
             color: '#999',
             formatter: function () {
               return '<b>' + this.point.name + '</b>';
@@ -105,14 +106,14 @@
         text: 'I design with...'
       },
       tooltip: {
-        formatter: function () { return false; }
+        //formatter: function () { return false; }
       },
       plotOptions: {
         pie: {
           allowPointSelect: true,
           cursor: 'pointer',
           dataLabels: {
-            enabled: true,
+            enabled: false,
             color: '#999',
             formatter: function () {
               return '<b>' + this.point.name + '</b>';
@@ -148,14 +149,14 @@
         text: 'I develop with...'
       },
       tooltip: {
-        formatter: function () { return false; }
+        //formatter: function () { return false; }
       },
       plotOptions: {
         pie: {
           allowPointSelect: true,
           cursor: 'pointer',
           dataLabels: {
-            enabled: true,
+            enabled: false,
             color: '#999',
             formatter: function () {
               return '<b>' + this.point.name + '</b>';

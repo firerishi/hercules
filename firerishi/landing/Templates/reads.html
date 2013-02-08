@@ -196,21 +196,8 @@
       console.log($(this).children('h3').text());         
       $(this).children('h3').slideDown();
     });
-
-    $('#main-responsive-nav').click(function() {
-      $('#main-nav').slideToggle();      
-    });
-
-    // Show (always) the main nav menu when the window width is >= 1000px
-    $(window).resize(function() {
-      var winWidth = $(window).width();
-      if (winWidth >= 1000) {
-        $('#main-nav').show();
-      }
-      else {
-       $('#main-nav').hide(); 
-      }
-    });
+   
+    
   </script>
 
 {% endblock %}

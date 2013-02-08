@@ -68,23 +68,5 @@
     <!-- End of Navbar
     ================================================== -->
 
-    <script type="text/javascript">
     
-
-    $('#main-responsive-nav').click(function() {
-      $('#main-nav').slideToggle();      
-    });
-
-    // Show (always) the main nav menu when the window width is >= 1000px
-    $(window).resize(function() {
-      var winWidth = $(window).width();
-      if (winWidth >= 1000) {
-        $('#main-nav').show();
-      }
-      else {
-       $('#main-nav').hide(); 
-     }
-   });
-    </script>
-
     {% endblock %}
