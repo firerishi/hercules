@@ -9,6 +9,10 @@ def home(request):
 	return render_to_response('about.html')
 
 
+def work(request):
+	return render_to_response('work.html')
+
+
 def blog(request):
 	url = "http://api.tumblr.com/v2/blog/firerishi.tumblr.com/posts?api_key=mozSVcfN75W2PSk9hAQbGufzYwkZOMfhl7NFnnzOILuY6p2QaN&limit=50"
 	#url production api-key:  mozSVcfN75W2PSk9hAQbGufzYwkZOMfhl7NFnnzOILuY6p2QaN
@@ -29,3 +33,4 @@ def blog(request):
 
 def reads(request):
 	return render_to_response('reads.html')
+

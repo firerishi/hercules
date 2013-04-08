@@ -239,8 +239,18 @@ section#right-section {
 #hero-text h1 {
   font-size: 2.7em;
   font-weight: 700;
-  color: #333;
+  color: #555;
   margin: 0;
+}
+#hero-text h3 {
+  font-size: 1.7em;
+  color: #777;
+  margin: 3% 20% 10% 20%;
+  line-height: 1.7em;
+  font-style: italic;
+}
+#hero-text h3 a {
+  color: #9898B3;
 }
 #hero-text p {
   font-size: 1.1em;
@@ -476,6 +486,26 @@ section#right-section {
 #blog-posts h4 {
   color: #bcbcbc;
   font-weight: normal;
+}
+
+
+#work-list {
+  margin-left: 5%;
+  list-style: none;
+}
+#work-list li {
+  margin: 5% 0%;
+}
+#work-list a {
+  color: #777;
+  text-decoration: underline;
+}
+#work-list a:hover {
+  color: #9898B3;
+}
+#work-list p {
+  font-size: 1.2em;
+  color: #777;
 }
 
 /* Media Queries */
