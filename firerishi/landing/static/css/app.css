@@ -186,7 +186,7 @@ section#right-section {
   margin-top: 10%;
 }
 
-#main-nav {
+#mainNav {
   border-bottom: 1px solid #dedede;
   margin: 0;
   text-align: center;
@@ -203,16 +203,16 @@ section#right-section {
   text-align: center;
 
 }
-#main-nav ul,
+#mainNav ul,
 #about-nav ul {
   list-style: none;
 }
-#main-nav ul li,
+#mainNav ul li,
 #about-nav ul li {
   display: inline-block;
   margin: 2% 7% 2% 0;
 }
-#main-nav ul li a,
+#mainNav ul li a,
 #about-nav ul li a {
   background: white;
   padding: 7px 21px;
@@ -223,7 +223,7 @@ section#right-section {
   /*background: #f7f7f7;*/
   border: 1px solid #f2f2f2;
 }
-#main-nav ul li a:hover,
+#mainNav ul li a:hover,
 #about-nav ul li a:hover {
   background: #525266;
   color: #fefefe;
@@ -521,7 +521,7 @@ section#right-section {
 }
 
 @media screen and (max-width: 1200px) {
-  #main-nav ul li {
+  #mainNav ul li {
     margin: 2% 2% 2% 0;
   }
   #main-responsive-nav,
@@ -574,14 +574,25 @@ section#right-section {
     margin: 2% 2% 2% 0;
   }
 
-  #main-nav {
-    display: none;
-    width: 100%;
-    margin-top: -4%;
+
+  #mainNav {
+    border-bottom: 0px solid #dedede;
+    margin: 0;
+    text-align: center;
     position: relative;
-  }
-  #main-nav li {
     width: 100%;
+    /*z-index: 2;*/
+    /*background: #525266;*/
+    opacity: 0.9;
+    margin-left: 1px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+  }
+  #mainNav li {
+    /*width: auto;*/
+  }
+  #mainNav ul li {
+    margin-right: 1%;
   }
   #main-responsive-nav {
     display: block;
@@ -625,6 +636,9 @@ section#right-section {
 /* Phone */
 @media screen and (max-width: 480px) {
   
+#hero-text h3 {
+  font-size: 1.1em;
+}
 
   #about-nav ul li{
     width: 90%;
@@ -633,6 +647,18 @@ section#right-section {
 
   #blog-posts img {
     width: 100%;
+  }
+
+  section.leftsection ul li a{
+    padding: 5px 20px;
+    border: 0px solid #eee;
+    border-radius: 0px;
+    text-decoration: underline;
+  }
+  section.leftsection ul li a:hover{
+    padding: 5px 20px;
+    border: 0px solid #525266;
+    color: #525266;
   }
 
 

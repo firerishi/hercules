@@ -22,6 +22,7 @@
     // Slide toggle the main nav on click in tablet/mobile environment
     $('#main-responsive-nav').click(function() {
       $('#main-nav').slideToggle("slow");      
+      console.log("something");
     });
 
 
